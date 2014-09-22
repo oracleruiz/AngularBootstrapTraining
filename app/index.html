@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" lang="en" id="ng-app" ng-app="Cars2015">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cars 2015 App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container">
+        <div class="row">
+            <div class="navbar navbar-inverse" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar">1</span>
+                            <span class="icon-bar">2</span>
+                            <span class="icon-bar">3</span>
+                        </button>
+                        <a class="navbar-brand" href="#">Cars 2015 Browser</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <!--<div class="input-group">-->
+                        <!--<input type="text" class="form-control">-->
+                        <!--<span class="input-group-btn">-->
+                        <!--<button class="btn btn-success" type="button">Search!</button>-->
+                        <!--</span>-->
+                        <!--</div><!-- /input-group -->-->
+                    </div><!--/.navbar-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div ng-view></div>
+        </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <script src="scripts/directives.js"></script>
+
+
+    <script src="scripts/controllers/searchCtrl.js"></script>
+    <script src="scripts/controllers/scopeCtrl.js"></script>
+
+
+
+
+</body>
+</html>
