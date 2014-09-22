@@ -1,9 +1,10 @@
-var carServices = angular.module('carServices', ['']);
+carApp.service("sharedService", function () {
 
-opaApiServices.factory("Account", ["$resource", function ($resource) {
-    return $resource("URL TO SOLR",
-        {},
-        { /* metodos extra si se ocuparan*/}
-    )}
-]);
+    this.sharedList = [];
+});
+
+
+
+
+
 

@@ -1,0 +1,51 @@
+<div>
+    <div class="col-xs-6" ng-controller="controllerOne">
+        <h1>Controller 1</h1>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label class="sr-only" for="inputText1">Text item</label>
+                <input type="text" class="form-control" id="inputText1" placeholder="Enter text..." ng-model="item">
+            </div>
+            <button type="submit" class="btn btn-default" ng-click="addItem()">Enter</button>
+        </form>
+        <hr/>
+        <h3>List Items:</h3>
+        <ul class="list-group">
+            <!--<li class="list-group-item" ng-repeat="item in list">-->
+                <!--<span class="badge">{{$index}}</span>-->
+                <!--{{item}}-->
+            <!--</li>-->
+
+            <li class="list-group-item" ng-repeat="item in sharedService.sharedList">
+                <span class="badge">{{$index}}</span>
+                {{item.value}}
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="col-xs-6" ng-controller="controllerTwo">
+        <h1>Controller 2</h1>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label class="sr-only" for="inputText2">Text item</label>
+                <input type="text" class="form-control" id="inputText2" placeholder="Enter text..." ng-model="item">
+            </div>
+            <button type="submit" class="btn btn-default" ng-click="addItem($index)">Enter</button>
+        </form>
+        <hr/>
+        <h3>List Items:</h3>
+        <ul class="list-group">
+            <!--<li class="list-group-item" ng-repeat="item in list">-->
+                <!--<span class="badge">{{$index}}</span>-->
+                <!--{{item.value}}-->
+            <!--</li>-->
+
+            <li class="list-group-item" ng-repeat="item in sharedService.sharedList">
+                <span class="badge">{{$index}}</span>
+                {{item.value}}
+            </li>
+
+        </ul>
+    </div>
+</div>

@@ -10,6 +10,18 @@ config(['$routeProvider', function($routeProvider) {
           templateUrl: 'views/scope.html',
           controller: 'scopeCtrl'
       })
+      .when('/service',{
+          templateUrl: 'views/services.html',
+          controller: ''
+      })
+      .when('/ngrepeat',{
+          templateUrl: 'views/ngrepeat.html',
+          controller: 'ngrepeatCtrl'
+      })
+      .when('/search',{
+          templateUrl: 'views/search.html',
+          controller: 'searchCtrl'
+      })
       .when('/',{
           templateUrl: 'views/resultView.html',
           controller: 'searchCtrl'

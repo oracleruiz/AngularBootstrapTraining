@@ -11,12 +11,12 @@ carApp.directive('carItem', function () {
 });
 
 
-carApp.directive('scopeItem', function () {
+carApp.directive('friendItem', function () {
     return {
         restrict: 'A',
         transclude: true,
         replace: true,
-        templateUrl: 'views/directives/scopeItem.html',
-        controller: 'scopeCtrl'
+        templateUrl: 'views/directives/friendItem.html',
+        controller: ''
     };
 });
