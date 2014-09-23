@@ -2,7 +2,8 @@
 
 // Declare app level module which depends on views, and components
 var carApp = angular.module('Cars2015', [
-  'ngRoute'
+    'ngRoute',
+    'carsService'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider

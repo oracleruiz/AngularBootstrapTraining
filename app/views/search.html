@@ -1,0 +1,22 @@
+<div>
+    <div class="jumbotron">
+        <h1>Search!</h1>
+        <br />
+        <form class="form-inline" role="form">
+            <div class="input-group">
+                <input type="text" class="form-control" ng-model="searchTerm">
+                <span class="input-group-btn">
+                    <button class="btn btn-success" type="submit" ng-click="search()">Search!</button>
+                </span>
+            </div>
+        </form>
+    </div>
+
+    <hr />
+
+    <div ng-if="cars">
+        <div class="col-xs-1">#</div>
+        <div class="col-xs-11"></div>
+    </div>
+    <div search-item ng-repeat="item in cars"></div>
+</div>
