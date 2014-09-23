@@ -1,22 +1,22 @@
-<div class="col-xs-12">
-    <div class="col-xs-1">{{$index + 1}}</div>
+<div class="col-xs-12 carItem">
+    <div class="col-xs-1 numberItem text-center">{{$index + 1}}</div>
 
-    <div class="col-xs-4">
+    <div class="col-xs-3 text-center">
         <img src="http://420placehold.it/cars/200-200">
     </div>
 
-    <div class="col-xs-7">
+    <div class="col-xs-8">
         <div>
-            <span>Branch: </span><span>{{make}}</span>
+            <span class="bold">Branch: </span><span>{{item.make}}</span>
         </div>
         <div>
-            <span>Model: </span><span>{{model}}</span>
+            <span class="bold">Model: </span><span>{{item.model}}</span>
         </div>
         <div>
-            <span>Cylinders: </span><span>{{cyl}}</span>
+            <span class="bold">Cylinders: </span><span>{{item.cyl}}</span>
         </div>
         <div>
-            <span>Tramision: </span><span>{{trans}}</span>
+            <span class="bold">Tramision: </span><span>{{item.trans}}</span>
         </div>
     </div>
 

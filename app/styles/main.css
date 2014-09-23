@@ -27,3 +27,21 @@
     border-radius: 25px;
     background-color: #66afe9;
 }
+
+
+.carItem{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #cccccc;
+    padding: 10px;
+}
+
+.numberItem{
+    font-size: large;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}
