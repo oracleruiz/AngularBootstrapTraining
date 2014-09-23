@@ -22,9 +22,5 @@ config(['$routeProvider', function($routeProvider) {
           templateUrl: 'views/search.html',
           controller: 'searchCtrl'
       })
-      .when('/',{
-          templateUrl: 'views/resultView.html',
-          controller: 'searchCtrl'
-      })
-      .otherwise({redirectTo: '/'});
+      .otherwise({redirectTo: '/search'});
 }]);
