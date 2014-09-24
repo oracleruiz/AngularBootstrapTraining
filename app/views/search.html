@@ -14,10 +14,16 @@
 
     <hr />
 
-    <div ng-if="cars">
+    <div ng-if="cars" class="bold">
         <div class="col-xs-1 text-center">#</div>
         <div class="col-xs-3 text-center">CAR PIC</div>
         <div class="col-xs-8 text-center">DETAILS</div>
     </div>
     <div search-item ng-repeat="item in cars"></div>
+
+    <div class="alert alert-danger" role="alert" ng-show="noResults">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <strong>No Results!</strong> Better try another query.
+    </div>
+
 </div>

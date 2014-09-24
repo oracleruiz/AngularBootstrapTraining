@@ -11,7 +11,7 @@ carsService.factory('Cars', ['$resource',
         return $resource('http://localhost:8983/solr/collection1/select',
             {   wt:'json',
                 defType:'edismax',
-                qf:'model^2.0 cyl trans drive fuel^1.1 veh_class',
+                qf:'model^2.0 cyl trans drive fuel^1.1 veh_class make^2.0',
                 stopwords:'true',
                 lowercaseOperators:true
             },
