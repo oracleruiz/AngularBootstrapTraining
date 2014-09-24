@@ -6,10 +6,25 @@
             <div class="input-group">
                 <input type="text" class="form-control" ng-model="searchTerm">
                 <span class="input-group-btn">
-                    <button class="btn btn-success" type="submit" ng-click="search()">Search!</button>
+                    <button class="btn btn-success" type="submit" ng-click="search()"><span class="glyphicon glyphicon-search"></span></button>
                 </span>
             </div>
         </form>
+    </div>
+
+    <div  ng-if="cars" id="actionBar" class="col-xs-12">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Sort by</button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Branch</a></li>
+                <li><a href="#">Model</a></li>
+                <li><a href="#">Fuel</a></li>
+            </ul>
+        </div>
     </div>
 
     <hr />

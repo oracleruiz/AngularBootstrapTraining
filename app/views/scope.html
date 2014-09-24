@@ -7,10 +7,7 @@
         <div class="input-lg">
             <input type="text" class="form-control" placeholder="Enter some text..." ng-model="scopeText">
         </div>
-        <button type="button" class="btn btn-primary btn-lg" ng-click="$broadcast('MyEvent',scopeText)">Broadcast</button>
-
-
-
+        <!--<button type="button" class="btn btn-primary btn-lg" ng-click="$broadcast('MyEvent',scopeText)">Broadcast</button>-->
     </div>
 
     <div class="row">
@@ -21,12 +18,12 @@
             </h1>
         </div>
 
-        <div ng-repeat="item in ['b','c','d']" ng-controller="scopeCtrl" class="col-xs-6">
-            <h1>
-                <p class="text-center" ng-bind="scopeText" ng-class="{'b': item == 'b','c': item == 'c','d': item == 'd'}"></p>
-            </h1>
-            <button type="button" class="btn btn-default" ng-click="scopeText = $parent.scopeText">$ParentScope</button>
-        </div>
+        <!--<div ng-repeat="item in ['b','c','d']" ng-controller="scopeCtrl" class="col-xs-6">-->
+            <!--<h1>-->
+                <!--<p class="text-center" ng-bind="scopeText" ng-class="{'b': item == 'b','c': item == 'c','d': item == 'd'}"></p>-->
+            <!--</h1>-->
+            <!--&lt;!&ndash;<button type="button" class="btn btn-default" ng-click="scopeText = $parent.scopeText">$ParentScope</button>&ndash;&gt;-->
+        <!--</div>-->
     </div>
 
 </div>

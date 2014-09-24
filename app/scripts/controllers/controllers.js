@@ -1,8 +1,7 @@
-carApp.controller('controllerOne', ["$scope","sharedService", function ($scope,sharedService) {
+carApp.controller('controllerOne', ["$scope",function ($scope) {
     
     $scope.item = "";
     $scope.list = [];
-    $scope.sharedService = sharedService;
 
     $scope.addItem = function(){
 
@@ -14,23 +13,15 @@ carApp.controller('controllerOne', ["$scope","sharedService", function ($scope,s
 }]);
 
 
-carApp.controller('controllerTwo', ["$scope","sharedService", function ($scope,sharedService) {
+carApp.controller('controllerTwo', ["$scope",function ($scope) {
 
     $scope.item = "";
     $scope.list = [];
-    $scope.sharedService = sharedService;
 
-    $scope.addItem = function(index){
-        var obj = {};
-
+    $scope.addItem = function(){
         if($scope.item){
-
-            obj = {
-                'index':index,
-                'value':$scope.item
-            };
+            var obj = {'value':$scope.item};
             $scope.list.push(obj);
-            //$scope.sharedService.sharedList.push(obj);
             $scope.item = "";
         }
     };

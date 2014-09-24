@@ -24,4 +24,13 @@ config(['$routeProvider', function($routeProvider) {
           controller: 'searchCtrl'
       })
       .otherwise({redirectTo: '/search'});
-}]);
+}])
+
+/**
+ * Capitalizes the first letter of the input string.
+ */
+    .filter('capitalize', function () {
+        return function (input) {
+            return input.substring(0, 1).toUpperCase() + input.substring(1);
+        }
+    });

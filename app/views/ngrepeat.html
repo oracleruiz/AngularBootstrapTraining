@@ -3,15 +3,11 @@
     <div class="jumbotron">
         <h1>ng-repeat!</h1>
         <br />
-
-        <div class="input-lg">
-            <input type="text" class="form-control" placeholder="filter" ng-model="q">
-        </div>
     </div>
 
     <div class="row">
 
-       <div friend-item ng-repeat="friend in friends | filter:q"></div>
+       <div friend-item ng-repeat="friend in friends"></div>
     </div>
 
 </div>
